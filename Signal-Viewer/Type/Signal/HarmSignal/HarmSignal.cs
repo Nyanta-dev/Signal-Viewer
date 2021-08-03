@@ -3,7 +3,7 @@
  * It can also be an independent signal if it is the only component of the signal.
  */
 
-namespace Signal_Viewer.Type.Signal.Signal {
+namespace Signal_Viewer.Type.Signal {
     class HarmSignal {
         public double Amplitude { get; private set; }
         public double BeginPhaseRadian { get; private set; }
@@ -16,5 +16,3 @@ namespace Signal_Viewer.Type.Signal.Signal {
         }
     }
 }
-
-/* -+-+-+- end file -+-+-+- */
