@@ -5,8 +5,21 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Signal_Viewer"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-
+        Title="SignalViewer" Height="300" Width="800"
+        SizeChanged="Window_SizeChanged">
+    <Grid x:Name="MainGrid" Background="Gray">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition x:Name="SignalArea"/>
+            <ColumnDefinition x:Name="RadialChart"/>
+            <ColumnDefinition x:Name="SettingArea"/>
+        </Grid.ColumnDefinitions>
+        <Canvas x:Name="SignalAreaCanvas"
+                Background="LightBlue"/>
+        <Canvas x:Name="RadialChartCanvas"
+                Background="LightPink"
+                Grid.Column="1"/>
+        <Canvas x:Name="SettingAreaCanvas"
+                Background="LightCyan"
+                Grid.Column="2"/>
     </Grid>
 </Window>

@@ -6,7 +6,7 @@ using System.Collections.Generic;
  * It also contains information about the spectrum signal.
  */
 
-namespace Signal_Viewer.Type.Signal.Signal {
+namespace Signal_Viewer.Type.Signal {
     class AggregateSignal {
         private int countSignalComponents;
         private List<HarmSignal> signalComponents;
@@ -30,7 +30,7 @@ namespace Signal_Viewer.Type.Signal.Signal {
 
         private void ResetSpectrumSignal() {
             if (signalComponents == null) {
-                throw new Exception();
+                throw new Exception("The signal components you are trying to process is null.");
             }
 
             foreach (HarmSignal item in signalComponents) {
@@ -43,7 +43,7 @@ namespace Signal_Viewer.Type.Signal.Signal {
         }
         private void SetSpectrumSignal(HarmSignal signalComponent) {
             if (spectrumSignal == null) {
-                throw new Exception();
+                throw new Exception("The signal components you are trying to process is null.");
             }
 
             if (spectrumSignal.ContainsKey(signalComponent.Frequency)) {
@@ -58,7 +58,7 @@ namespace Signal_Viewer.Type.Signal.Signal {
 
         public double GetSignalAmplitude(double timePoint) {
             if (signalComponents == null) {
-                throw new Exception();
+                throw new Exception("The signal components you are trying to process is null.");
             }
 
             double result = 0;
@@ -69,5 +69,3 @@ namespace Signal_Viewer.Type.Signal.Signal {
         }
     }
 }
-
-/* -+-+-+- end file -+-+-+- */
