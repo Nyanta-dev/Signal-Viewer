@@ -1,0 +1,7 @@
+*.user
+AssemblyInfo.cs
+
+#dir:
+/.vs/
+/bin/
+/obj/
