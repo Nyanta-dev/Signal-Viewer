@@ -5,6 +5,6 @@
 AssemblyInfo.cs
 
 #dir:
-.vs/
-bin/
-obj/
+.vs/**/**
+bin/**/**
+obj/**/**
