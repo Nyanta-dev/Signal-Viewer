@@ -14,5 +14,9 @@ namespace Signal_Viewer.Type.Signal {
             Frequency = frequency;
             BeginPhaseRadian = beginPhaseRadian;
         }
+
+        public double GetSignalPhase(double timePoint) {
+            return (this.Frequency * timePoint) + this.BeginPhaseRadian;
+        }
     }
 }
