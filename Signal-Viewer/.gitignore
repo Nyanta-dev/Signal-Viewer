@@ -1,0 +1,10 @@
+#all file with type:
+*.user
+
+#file:
+AssemblyInfo.cs
+
+#dir:
+.vs/**/**
+bin/**/**
+obj/**/**
